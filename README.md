@@ -6,6 +6,8 @@ It is a Framework for application development. It would be based on the followin
 * MyBatis 
 * Hibernate Validator
 * Jackson
+* Maven
+* Eclipse
 
 ## Feature
 * Authentication

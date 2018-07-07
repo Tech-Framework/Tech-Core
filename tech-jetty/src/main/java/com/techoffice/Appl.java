@@ -17,14 +17,18 @@ public class Appl {
         server.setHandler(servletContextHandler);
 
         ServletHandler servletHandler = new ServletHandler();
+        
+        // DispatchServlet
         ServletHolder servletHolder = new ServletHolder();
-
         DispatcherServlet dispatcherServlet = new DispatcherServlet();
         servletHolder.setServlet(dispatcherServlet);
         servletHolder.setInitParameter("contextConfigLocation", "classpath:/webapp/WEB-INF/beans.xml");
         servletHandler.addServletWithMapping(servletHolder, "/");
         
+        // 
         servletContextHandler.setServletHandler(servletHandler);
+        
+        // Resource Base
         servletContextHandler.setBaseResource(Resource.newClassPathResource("/webapp"));
 
         server.start();

@@ -1,6 +1,7 @@
 package com.techoffice.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,4 +15,8 @@ public class HelloController {
 		return "Hello World!";
 	}
 	
+	@RequestMapping(value = "/template", method = RequestMethod.GET)
+	public String template(ModelMap model){
+		return "template";
+	}
 }

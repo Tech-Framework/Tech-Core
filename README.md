@@ -3,11 +3,9 @@ Tech Framework - Core Module
 
 It is a Framework for application development. It would be based on the following library 
 * Spring Framework
-* MyBatis 
-* Hibernate Validator
+* Hibernate
 * Jackson
 * Maven
-* Eclipse
 
 ## Feature
 * Authentication
